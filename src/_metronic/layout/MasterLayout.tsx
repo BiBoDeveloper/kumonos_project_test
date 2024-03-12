@@ -7,7 +7,8 @@ import {RightToolbar} from '../partials/layout/RightToolbar'
 import {ScrollTop} from './components/ScrollTop'
 import {Content} from './components/Content'
 import {PageDataProvider} from './core'
-import {ActivityDrawer, DrawerMessenger, InviteUsers, UpgradePlan} from '../partials'
+import {DetailsRequestDrawer, CheckAndEditRequestDrawer, NewRequestDrawer, EditProjectDrawer, NewTaskDrawer, NewProjectDrawer, ActivityDrawer, DrawerMessenger, InviteUsers, UpgradePlan} from '../partials'
+
 import {MenuComponent} from '../assets/ts/components'
 
 const MasterLayout = () => {
@@ -45,10 +46,15 @@ const MasterLayout = () => {
 
       {/* begin:: Drawers */}
       <ActivityDrawer />
-      {/* <RightToolbar /> */}
+      <NewProjectDrawer />
+      <NewTaskDrawer />
+      <EditProjectDrawer />
+      <NewRequestDrawer />
       <DrawerMessenger />
+      <CheckAndEditRequestDrawer />
+      <DetailsRequestDrawer />
       {/* end:: Drawers */}
-
+      
       {/* begin:: Modals */}
       <InviteUsers />
       <UpgradePlan />
