@@ -22,7 +22,7 @@ const DashboardPage = () => {
 
   return (
     <>
-      <h3>Dashboard kumonos</h3>
+      <h3>Dashboard systory</h3>
     </>
   );
 };
